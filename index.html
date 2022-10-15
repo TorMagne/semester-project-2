@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streetwear</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="relative overflow-x-hidden">
+    <!-- nav -->
+    <nav class="bg-lightBlack relative z-50 border-b-2 border-[#FEC303]">
+      <div class="container mx-auto flex h-[75px] items-center justify-between px-4" id="top">
+        <a href="index.html"
+          ><div><img src="./src/images/logo.png" alt="company logo" class="h-[48px]" /></div
+        ></a>
+        <div>
+          <svg id="open" class="block h-6 w-6" fill="none" stroke="#FEC303" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+          <svg id="close" class="hidden h-6 w-6" fill="none" stroke="#FEC303" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="relative z-40">
+        <div
+          class="font-mont bg-lightBlack absolute top-0 flex h-[250px] w-full -translate-x-full transform items-center justify-center text-center text-xl tracking-wide text-white duration-300 ease-in-out"
+          id="slide"
+        >
+          <ul class="menu"></ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-lightBlack">
+      <div class="mx-auto flex h-[467px] items-center">
+        <div class="hero-banner-div grid h-full w-full flex-col place-content-center px-4 lg:h-screen">
+          <div class="message-container"></div>
+          <div class="z-30 lg:mt-64">
+            <h1 class="font-mont pb-6 text-4xl font-bold uppercase text-white xl:text-6xl">Streetwear for all ages</h1>
+            <div class="flex items-center pb-6">
+              <div class="bg-yellow z-20 mr-7 h-[4px] w-[50px]"></div>
+              <a href="productpage.html" class="font-merri bg-yellow z-20 h-[42px] w-[150px] px-4 py-2 text-center uppercase text-black hover:bg-[#fec30365]">Take a look</a>
+            </div>
+            <p class="font-merri z-20 text-base leading-[20px] tracking-normal text-white xl:text-lg">
+              We’re Streetwear, the shoe company for everyone and all ages. We specialize in getting you the best shoe that you deserve.
+            </p>
+          </div>
+        </div>
+        <div class="top-75 absolute z-0 h-[467px] w-full bg-[#00000034] lg:h-screen"></div>
+      </div>
+    </header>
+
+    <!-- free shipping -->
+    <section class="relative z-10 mx-auto mb-10 flex justify-center px-4">
+      <div class="mt-[-40px] w-[280px] bg-[#000000] p-8 text-center text-white lg:mt-[100px] lg:w-[500px] lg:p-14">
+        <h2 class="font-mont text-lg font-bold">Free shipping</h2>
+        <p class="font-merri border-yellow border-b-2 text-lg">On order of $300 or more</p>
+      </div>
+    </section>
+
+    <div class="flex min-h-screen flex-col">
+      <main>
+        <section>
+          <div class="container mx-auto mb-16 px-4 lg:mt-56">
+            <div class="message-container"></div>
+            <h2 class="font-mont first-letter:text-yellow relative z-20 text-center text-2xl font-semibold first-letter:text-5xl first-letter:font-bold xl:text-6xl xl:first-letter:text-7xl">
+              Recommended for you
+            </h2>
+            <div class="mt-10 grid justify-items-center gap-4 md:grid-cols-2 lg:my-20 lg:grid-cols-4" id="featured-prod">
+              <div class="bouncer-box m-auto pt-10">
+                <div class="bouncer flex justify-center">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer class="bg-lightBlack z-20 mt-auto w-full">
+        <section class="font-merri container mx-auto px-4 pb-6 lg:flex lg:content-center lg:justify-between lg:py-4">
+          <div class="flex justify-center">
+            <a href="#top"><img src="./src/images/logo.png" alt="company logo" /></a>
+          </div>
+          <div class="text-white md:flex md:items-center md:justify-center">
+            <div>
+              <ul class="mb-10 mr-10 flex justify-center font-semibold md:my-auto">
+                <li class="mr-8"><a href="">Home</a></li>
+                <li class="mr-8"><a href="">Products</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <address class="flex flex-col items-center">
+                <span>Email: mailto:Shoes@example.com</span>
+                <span>Phone: 403 607 900 Box 564</span>
+                <span> Shoeland USA</span>
+              </address>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="./src/js/utils/nav.js"></script>
+    <script src="./src/js/apiCalls/bannerCall.js" type="module"></script>
+    <script src="./src/js/apiCalls/featuredProd.js" type="module"></script>
+  </body>
+</html>

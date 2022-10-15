@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="border-yellow bg-lightBlack relative border-b-2">
+      <div class="container mx-auto flex h-[75px] items-center justify-between px-4">
+        <a href="index.html"
+          ><div><img src="./src/images/logo.png" alt="company logo" class="h-[48px]" /></div
+        ></a>
+        <div>
+          <svg id="open" class="block h-6 w-6" fill="none" stroke="#FEC303" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+          <svg id="close" class="hidden h-6 w-6" fill="none" stroke="#FEC303" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="relative z-40">
+        <div
+          class="font-mont bg-lightBlack absolute top-0 flex h-[200px] w-full -translate-x-full transform items-center justify-center text-center text-xl tracking-wide text-white duration-300 ease-in-out"
+          id="slide"
+        >
+          <ul class="menu"></ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav -->
+    <div class="flex min-h-screen flex-col">
+      <main>
+        <div class="container mx-auto mb-10">
+          <div id="cart-container" class="mt-10 grid justify-items-center gap-4 px-4 md:grid-cols-2 lg:my-20 lg:grid-cols-4">
+            <div class="bouncer-box m-auto pt-10">
+              <div class="bouncer flex justify-center">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div id="cart-total" class="px-4"></div>
+        </div>
+      </main>
+
+      <footer class="bg-lightBlack z-20 mt-auto w-full">
+        <section class="font-merri container mx-auto px-4 pb-6 lg:flex lg:content-center lg:justify-between lg:py-4">
+          <div class="flex justify-center">
+            <a href="index.html"><img src="./src/images/logo.png" alt="company logo" /></a>
+          </div>
+          <div class="text-white md:flex md:items-center md:justify-center">
+            <div>
+              <ul class="mb-10 mr-10 flex justify-center font-semibold md:my-auto">
+                <li class="mr-8"><a href="">Home</a></li>
+                <li class="mr-8"><a href="">Products</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <address class="flex flex-col items-center">
+                <span>Email: mailto:Shoes@example.com</span>
+                <span>Phone: 403 607 900 Box 564</span>
+                <span> Shoeland USA</span>
+              </address>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="./src/js/utils/nav.js"></script>
+    <script src="./src/js/cart.js" type="module"></script>
+  </body>
+</html>

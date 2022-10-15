@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="relative border-b-2 border-[#FEC303] bg-[#404040]">
+      <div class="container mx-auto flex h-[75px] items-center justify-between px-4">
+        <a href="index.html"
+          ><div><img src="./src/images/logo.png" alt="company logo" class="h-[48px]" /></div
+        ></a>
+        <div>
+          <svg id="open" class="block h-6 w-6" fill="none" stroke="#FEC303" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+          <svg id="close" class="hidden h-6 w-6" fill="none" stroke="#FEC303" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="relative z-40">
+        <div
+          class="font-mont absolute top-0 flex h-[200px] w-full -translate-x-full transform items-center justify-center bg-[#404040] text-center text-xl tracking-wide text-white duration-300 ease-in-out"
+          id="slide"
+        >
+          <ul class="menu"></ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="font-mont container mx-auto mb-4 mt-10 flex flex-col rounded bg-white px-4 pt-6 pb-8">
+      <form action="" class="form edit-form">
+        <h1 class="mb-5 text-2xl font-bold">Edit product</h1>
+        <div class="message-container"></div>
+        <div class="mb-4">
+          <label class="text-grey-darker mb-2 block text-sm font-bold" for="name"> name </label>
+          <input class="text-grey-darker w-full appearance-none rounded border py-2 px-3 shadow" id="name" type="text" placeholder="Name" />
+        </div>
+        <div class="mt-5">
+          <label class="text-grey-darker mb-2 block text-sm font-bold" for="price"> price </label>
+          <input class="border-red text-grey-darker mb-3 w-full appearance-none rounded border py-2 px-3 shadow" id="price" type="number" placeholder="Price" />
+        </div>
+        <div class="mt-5">
+          <label class="text-grey-darker mb-2 block text-sm font-bold" for="image"> image </label>
+          <input class="border-red text-grey-darker mb-3 w-full appearance-none rounded border py-2 px-3 shadow" id="image" type="text" placeholder="image url" />
+        </div>
+        <div class="mt-5">
+          <label class="text-grey-darker mb-2 block text-sm font-bold" for="description"> description </label>
+          <textarea
+            class="border-red text-grey-darker mb-3 w-full appearance-none rounded border py-2 px-3 shadow"
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="description"
+          ></textarea>
+        </div>
+        <div class="mt-5">
+          <label class="text-grey-darker mb-2 block text-sm font-bold" for="description"></label>
+          <input class="border-red text-grey-darker appearance-none rounded border py-2 px-3 shadow" id="id" type="hidden" />
+        </div>
+        <div>
+          <label for="toogleA" class="flex cursor-pointer items-center">
+            <div class="relative">
+              <input id="toogleA" type="checkbox" class="sr-only" />
+
+              <div class="h-4 w-10 rounded-full bg-gray-400 shadow-inner"></div>
+
+              <div class="dot absolute -left-1 -top-1 h-6 w-6 rounded-full bg-white shadow transition"></div>
+            </div>
+
+            <div class="ml-3 font-medium text-gray-700">Featured</div>
+          </label>
+        </div>
+        <!-- test -->
+        <div class="flex items-center justify-between">
+          <button class="font-mont mt-5 rounded bg-[#FEC303] py-2 px-4 font-bold" type="submit">Update</button>
+        </div>
+        <div class="delete-container"></div>
+      </form>
+    </div>
+
+    <script src="./src/js/utils/nav.js"></script>
+    <script src="./src/js/utils/edit.js" type="module"></script>
+  </body>
+</html>
