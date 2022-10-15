@@ -1,6 +1,7 @@
 ﻿# Semester project 2
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![Uten navn](https://user-images.githubusercontent.com/61709493/195989032-fd94bd82-7c7d-46a6-a237-de6dd5d301ad.jpg)
+
 
 A simple overview of the use/purpose of the project.
 
@@ -28,6 +29,11 @@ git clone https://github.com/TorMagne/semester-project-2.git
 
 ```
 npm install
+```
+
+3. Clone this strapi repo and connect it to the front end
+```
+https://github.com/NoroffFEU/strapi-sp2
 ```
 
 ### Running
